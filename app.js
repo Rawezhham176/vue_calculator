@@ -9,13 +9,13 @@ let app = new Vue({
             this.calc += '+'
         },
         substract() {
-            this.calc -= '-'
+            this.calc += '-'
         },
         divide() {
-            this.calc /= '/'
+            this.calc += '/'
         },
         multiply() {
-            this.calc *= '*'
+            this.calc += '*'
         },
         setModifier(x) {
             this.calc += x
