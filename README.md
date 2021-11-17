@@ -1,4 +1,4 @@
-#A Vue.js Calculator
+# A Vue.js Calculator
 
 Made with Html, Css, JavaScript, Php
 
