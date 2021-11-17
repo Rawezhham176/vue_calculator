@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="calculator">
+        <div class="calc">{{ calc }}</div>
+        <div class="value">{{ value }}</div>
+        <div class="buttons">
+          <div v-for="x in 10" v-on:click="setModifier(x-1)" class="btn">
+            {{ x-1 }}
+          </div>
+          <div v-on:click="add()" class="btn">+</div>
+          <div v-on:click="substract()" class="btn">-</div>
+          <div v-on:click="divide()" class="btn">/</div>
+          <div v-on:click="multiplay()" class="btn">*</div>
+          <div v-on:click="calculate()" class="btn">=</div>
+          <div v-on:click="reset()" class="btn">C</div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
